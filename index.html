@@ -1,110 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modern Bootstrap Page</title>
+</head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
-
-    <!-- Your custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">ChatGpt</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Courses
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ReactJs</a></li>
-                <li><a class="dropdown-item" href="#">DATA Science</a></li>
-                <li><a class="dropdown-item" href="#">Machine Learning</a></li>
-                <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
-                <li><a class="dropdown-item" href="#">Cybersecurity</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Welcome Section -->
-    <div class="container p-5 text-danger">
-      <h1>Welcome to Bootstrap</h1>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-primary" href="#">Callagan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex ms-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
     </div>
+  </div>
+</nav>
 
-    <!-- Columns Section -->
+<div class="bg-primary bg-gradient text-white py-5">
+    <div class="container text-center py-5">
+        <h1 class="display-3 fw-bold mb-4">Welcome to My Platform</h1>
+        <p class="lead fs-4 mb-4">Discover amazing features and stunning design</p>
+        <button class="btn btn-light btn-lg px-5 rounded-pill">Get Started</button>
+    </div>
+</div>
+
+<div class="container my-5 py-5">
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Our Features</h2>
+        <p class="text-muted fs-5">Everything you need in one place</p>
+    </div>
+    
+    <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                <div class="card-body text-center">
+                    <div class="" style="width: 80px; height: 80px;">
+                 
+                    </div>
+                    <h3 class="card-title h4 mb-3">Fast Performance</h3>
+                    <p class="card-text text-muted">Lightning-fast load times and seamless navigation for the best user experience possible.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                <div class="card-body text-center">
+                    <div class="" style="width: 80px; height: 80px;">
+                   
+                    </div>
+                    <h3 class="card-title h4 mb-3">Beautiful Design</h3>
+                    <p class="card-text text-muted">Modern and intuitive interface designed with attention to every detail and user comfort.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                <div class="card-body text-center">
+                    <div class="" style="width: 80px; height: 80px;">
+                     
+                    </div>
+                    <h3 class="card-title h4 mb-3">Secure & Safe</h3>
+                    <p class="card-text text-muted">Your data is protected with industry-leading security standards and encryption protocols.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light py-5">
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Our Gallery</h2>
+            <p class="text-muted fs-5">Explore our stunning collection</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow rounded-4 overflow-hidden h-100">
+                    <img src="static/images/405x397_2.png" class="card-img-top" alt="Nature" style="height: 250px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <h5 class="card-title fw-bold">Amazing Landscapes</h5>
+                        <p class="card-text text-muted">Discover breathtaking views and natural beauty from around the world.</p>
+                        <a href="#" class="btn btn-primary rounded-pill px-4">Explore More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow rounded-4 overflow-hidden h-100">
+                    <img src="static/images/405x397_4.jpg" class="card-img-top" alt="Architecture" style="height: 250px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <h5 class="card-title fw-bold">Modern Architecture</h5>
+                        <p class="card-text text-muted">Contemporary designs that push the boundaries of creativity and innovation.</p>
+                        <a href="#" class="btn btn-primary rounded-pill px-4">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow rounded-4 overflow-hidden h-100">
+                    <img src="static/images/e-sim-card-new.png" class="card-img-top" alt="Technology" style="height: 250px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <h5 class="card-title fw-bold">Cutting-Edge Tech</h5>
+                        <p class="card-text text-muted">The latest innovations and technological advancements shaping our future.</p>
+                        <a href="#" class="btn btn-primary rounded-pill px-4">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white py-5 mt-5">
     <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <h2>Column One</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut fuga
-            totam atque corporis, repudiandae voluptas minus quae similique,
-            dignissimos eveniet ipsa quasi doloribus quisquam esse adipisci quam
-            animi. Deleniti, laborum!
-          </p>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3">About Us</h5>
+                <p class="text-white-50">We create amazing experiences with modern design and cutting-edge technology.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Services</a></li>
+                    <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Gallery</a></li>
+                    <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3">Contact</h5>
+                <p class="text-white-50 mb-1">Email: callagansikuche0@gmail.com</p>
+                <p class="text-white-50 mb-1">Phone: +254 700 686 337</p>
+                <p class="text-white-50">Location: Nairobi, Kenya</p>
+            </div>
         </div>
-
-        <div class="col-4">
-          <h2>Column Two</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut fuga
-            totam atque corporis, repudiandae voluptas minus quae similique,
-            dignissimos eveniet ipsa quasi doloribus quisquam esse adipisci quam
-            animi. Deleniti, laborum!
-          </p>
+        <hr class="border-secondary my-4">
+        <div class="text-center text-white-50">
+            <p class="mb-0">&copy; 2025 Callagan. All rights reserved.</p>
         </div>
-
-        <div class="col-4">
-          <h2>Column Three</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut fuga
-            totam atque corporis, repudiandae voluptas minus quae similique,
-            dignissimos eveniet ipsa quasi doloribus quisquam esse adipisci quam
-            animi. Deleniti, laborum!
-          </p>
-        </div>
-      </div>
     </div>
+</footer>
 
-    <!-- Bootstrap JS -->
-    <script src="static/js/bootstrap.bundle.min.js"></script>
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
